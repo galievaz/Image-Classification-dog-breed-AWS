@@ -32,18 +32,20 @@ I have used for fine-tuning following hyperparameter ranges:
 2. "batch_size": CategoricalParameter([32, 64, 128, 256])
 
 Below is list of training jobs in the screenshot:
-(training_jobs.png
+![Alt text](training_jobs.png?raw=true "training_jobs.png")
  
 Hyperparameter tuning jobs completed jobs:
+![Alt text](hpo_jobs.png?raw=true "hpo_jobs.png")
  
 Logs from the last completed training job with metrics during the process:
 
- 
+ ![Alt text](logs.png?raw=true "logs.png")
 
 
 ## Debugging and Profiling
 
 During of training I didn’t know model performance, whether accuracy is acceptable. For visualization was applied graphical representation of the Cross Entropy Loss which is shown below.
+![Alt text](curves.png?raw=true "curves.png")
  
 
 ### Results
