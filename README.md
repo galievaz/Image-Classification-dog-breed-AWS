@@ -45,17 +45,19 @@ Logs from the last completed training job with metrics during the process:
 ## Debugging and Profiling
 
 During of training I didn’t know model performance, whether accuracy is acceptable. For visualization was applied graphical representation of the Cross Entropy Loss which is shown below.
+
 ![Alt text](curves.png?raw=true "curves.png")
  
 
 ### Results
 I have tried a few training jobs, here is summary with metrics and insights of last training job: 
 From shown information about trained job, built model is not overfitted, some errors are in overtraining, so need more investigate to weight initialization, probably running on GPU may impact(trigger error, so was used cpu)
+![Alt text](metrics.png?raw=true "metrics.png")
 ## Model Deployment
 
 The model was deployed in ml.m5.xlarge instance and used cuda-cpu as device for training.
 There are deployed endpoints in inferences.
- 
+![Alt text](endpoints.png?raw=true "endpoints.png")
 For querying the endpoint is needed to add the path of test data image by opening for reading this file and triggering predict function of model.
 
 
